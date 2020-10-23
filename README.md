@@ -3,4 +3,4 @@
 ![Actions Status](/workflows/hexlet-check/badge.svg)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-![.github/workflows/Lint-check.yml](https://github.com/actions/hello-world/workflows/.github/workflows/main.yml/badge.svg)
+[![Lint Chek](https://github.com/Rost-is-love/frontend-project-lvl1/.github/workflows/)](https://github.com/hexlet-boilerplates/nodejs-package/actions)
