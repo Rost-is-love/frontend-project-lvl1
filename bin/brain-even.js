@@ -1,4 +1,5 @@
-import isEvenNumber from '../src/even-number.js';
+#!/usr/bin/env node
 
-console.log('Welcome to the Brain Games!');
+import isEvenNumber from '../src/games/even-number.js';
+
 isEvenNumber();
