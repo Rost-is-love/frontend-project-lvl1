@@ -20,3 +20,7 @@ Game "Brain greatest common divisor"
 Game "Brain progression"
 
 [![asciicast](https://asciinema.org/a/bDsoZcOa4I7y8ZGv4cnweDs0m.svg)](https://asciinema.org/a/bDsoZcOa4I7y8ZGv4cnweDs0m)
+
+Game "Brain prime"
+
+[![asciicast](https://asciinema.org/a/5vPnyKRuDAhY8Iz8mG1dkInvZ.svg)](https://asciinema.org/a/5vPnyKRuDAhY8Iz8mG1dkInvZ)
