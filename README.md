@@ -16,3 +16,7 @@ Game "Brain calc"
 Game "Brain greatest common divisor"
 
 [![asciicast](https://asciinema.org/a/4jWKCAf3iapIVcHiAmQJLCYht.svg)](https://asciinema.org/a/4jWKCAf3iapIVcHiAmQJLCYht)
+
+Game "Brain progression"
+
+[![asciicast](https://asciinema.org/a/bDsoZcOa4I7y8ZGv4cnweDs0m.svg)](https://asciinema.org/a/bDsoZcOa4I7y8ZGv4cnweDs0m)
