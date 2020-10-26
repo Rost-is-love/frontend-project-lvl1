@@ -12,3 +12,7 @@ Game "Brain even"
 Game "Brain calc"
 
 [![asciicast](https://asciinema.org/a/okDuVMymTwd0wl3ZG1F4t63VZ.svg)](https://asciinema.org/a/okDuVMymTwd0wl3ZG1F4t63VZ)
+
+Game "Brain greatest common divisor"
+
+[![asciicast](https://asciinema.org/a/4jWKCAf3iapIVcHiAmQJLCYht.svg)](https://asciinema.org/a/4jWKCAf3iapIVcHiAmQJLCYht)
