@@ -12,11 +12,13 @@ const engine = async (rules, gamesСonditions) => {
     const [question, correctAnswer] = gamesСonditions();
     const response = await promptly.prompt(`Question: ${question}\nYour answer:`);
     if (response !== correctAnswer) {
-      return console.log(`'${response}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${playerName}!`);
+      console.log(`'${response}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
+      console.log(`Let's try again, ${playerName}!`);
+      return;
     }
     console.log('Correct!');
   }
-  return console.log(`Congratulations, ${playerName}`);
+  console.log(`Congratulations, ${playerName}`);
 };
 
 export default engine;
