@@ -19,8 +19,9 @@ const makeProgression = (amountOfNumbers, startNumber, indexOfMissingNumber,
   return [progression, missingNumber];
 };
 
+const amountOfNumbers = 10;
+
 const gamesСonditions = () => {
-  const amountOfNumbers = 10;
   const startNumber = Math.floor(Math.random() * 10);
   const indexOfMissingNumber = Math.floor(Math.random() * 10);
   const progressionInterval = Math.ceil(Math.random() * 10);
