@@ -20,9 +20,11 @@ const findGcd = (firstNum, secondNum) => {
   return greatestCommonDivisor;
 };
 
+const randomnNumber = (num) => Math.floor(Math.random() * num);
+
 const gamesСonditions = () => {
-  const firstNum = Math.floor(Math.random() * 100);
-  const secondNum = Math.floor(Math.random() * 100);
+  const firstNum = randomnNumber(100);
+  const secondNum = randomnNumber(100);
   const question = `${firstNum} ${secondNum}`;
   const correctAnswer = String(findGcd(firstNum, secondNum));
   return [question, correctAnswer];

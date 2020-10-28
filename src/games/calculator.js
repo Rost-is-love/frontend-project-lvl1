@@ -21,11 +21,13 @@ const expression = (a, operator, b) => {
   return result;
 };
 
+const randomnNumber = (num) => Math.floor(Math.random() * num);
+
 const gamesСonditions = () => {
-  const firstNum = Math.floor(Math.random() * 100);
-  const secondNum = Math.floor(Math.random() * 100);
+  const firstNum = randomnNumber(100);
+  const secondNum = randomnNumber(100);
   const operators = ['+', '-', '*'];
-  const operator = operators[Math.floor(Math.random() * operators.length)];
+  const operator = operators[randomnNumber(operators.length)];
   const question = `${firstNum} ${operator} ${secondNum}`;
   const correctAnswer = String(expression(firstNum, operator, secondNum));
   return [question, correctAnswer];
