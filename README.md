@@ -7,20 +7,20 @@
 
 Game "Brain even"
 
-[![asciicast](https://asciinema.org/a/nSS4HpYtcM99iVWg51LSkhCXK.svg)](https://asciinema.org/a/nSS4HpYtcM99iVWg51LSkhCXK)
+[![asciicast](https://asciinema.org/a/VH9UGhS7ZQevLRy5wLy3hHqlJ.svg)](https://asciinema.org/a/VH9UGhS7ZQevLRy5wLy3hHqlJ)
 
 Game "Brain calc"
 
-[![asciicast](https://asciinema.org/a/okDuVMymTwd0wl3ZG1F4t63VZ.svg)](https://asciinema.org/a/okDuVMymTwd0wl3ZG1F4t63VZ)
+[![asciicast](https://asciinema.org/a/XgGctccBAhxxsrjhWXqciTdvJ.svg)](https://asciinema.org/a/XgGctccBAhxxsrjhWXqciTdvJ)
 
 Game "Brain greatest common divisor"
 
-[![asciicast](https://asciinema.org/a/4jWKCAf3iapIVcHiAmQJLCYht.svg)](https://asciinema.org/a/4jWKCAf3iapIVcHiAmQJLCYht)
+[![asciicast](https://asciinema.org/a/q7WEX8JqS4AVb8zcsUFGG1T6T.svg)](https://asciinema.org/a/q7WEX8JqS4AVb8zcsUFGG1T6T)
 
 Game "Brain progression"
 
-[![asciicast](https://asciinema.org/a/bDsoZcOa4I7y8ZGv4cnweDs0m.svg)](https://asciinema.org/a/bDsoZcOa4I7y8ZGv4cnweDs0m)
+[![asciicast](https://asciinema.org/a/L8zQiX7CfYf4MgSqJIgHB36Ft.svg)](https://asciinema.org/a/L8zQiX7CfYf4MgSqJIgHB36Ft)
 
 Game "Brain prime"
 
-[![asciicast](https://asciinema.org/a/5vPnyKRuDAhY8Iz8mG1dkInvZ.svg)](https://asciinema.org/a/5vPnyKRuDAhY8Iz8mG1dkInvZ)
+[![asciicast](https://asciinema.org/a/DOPekYq6FFaia2XQfnqVDeAcT.svg)](https://asciinema.org/a/DOPekYq6FFaia2XQfnqVDeAcT)
