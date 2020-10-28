@@ -18,7 +18,7 @@ const isPrime = (number) => {
 
 const gamesСonditions = () => {
   const randomnNumber = Math.floor(Math.random() * 1000);
-  const correctAnswer = (isPrime(randomnNumber)) ? 'yes' : 'no';
+  const correctAnswer = isPrime(randomnNumber) ? 'yes' : 'no';
   return [randomnNumber, correctAnswer];
 };
 

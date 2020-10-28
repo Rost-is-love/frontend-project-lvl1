@@ -6,7 +6,7 @@ const isEven = (number) => number % 2 === 0;
 
 const gamesСonditions = () => {
   const randomnNumber = Math.floor(Math.random() * 1000);
-  const correctAnswer = (isEven(randomnNumber)) ? 'yes' : 'no';
+  const correctAnswer = isEven(randomnNumber) ? 'yes' : 'no';
   return [randomnNumber, correctAnswer];
 };
 
