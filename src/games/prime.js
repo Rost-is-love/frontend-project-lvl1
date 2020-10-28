@@ -1,6 +1,6 @@
 import engine from '../index.js';
 
-const rules = () => console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
   if (number < 2) {

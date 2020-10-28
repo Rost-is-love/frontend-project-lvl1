@@ -1,6 +1,6 @@
 import engine from '../index.js';
 
-const rules = () => console.log('What number is missing in the progression?');
+const rules = 'What number is missing in the progression?';
 
 const makeProgression = (amountOfNumbers, startNumber, indexOfMissingNumber,
   progressionInterval) => {

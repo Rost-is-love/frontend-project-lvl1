@@ -1,6 +1,6 @@
 import engine from '../index.js';
 
-const rules = () => console.log('Find the greatest common divisor of given numbers.');
+const rules = 'Find the greatest common divisor of given numbers.';
 
 const findGcd = (firstNum, secondNum) => {
   let greatestCommonDivisor = 1;

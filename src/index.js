@@ -6,7 +6,7 @@ const engine = async (rules, gamesСonditions) => {
   console.log('Welcome to the Brain Games!');
   const playerName = await promptly.prompt('May I have your name?');
   console.log(`Hello, ${playerName}!`);
-  rules();
+  console.log(rules);
 
   for (let round = 1; round <= numberOfRounds; round += 1) {
     const [question, correctAnswer] = gamesСonditions();
