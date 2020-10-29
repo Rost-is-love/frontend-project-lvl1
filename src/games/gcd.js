@@ -24,8 +24,8 @@ const gamesСonditions = () => {
   const firstNum = makeRandomNum(100);
   const secondNum = makeRandomNum(100);
   const question = `${firstNum} ${secondNum}`;
-  const correctAnswer = String(findGcd(firstNum, secondNum));
-  return [question, correctAnswer];
+  const answer = String(findGcd(firstNum, secondNum));
+  return [question, answer];
 };
 
 export default () => engine(rules, gamesСonditions);

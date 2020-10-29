@@ -27,8 +27,8 @@ const gamesСonditions = () => {
   const operators = ['+', '-', '*'];
   const operator = operators[makeRandomNum(operators.length)];
   const question = `${firstNum} ${operator} ${secondNum}`;
-  const correctAnswer = String(makeExpression(firstNum, operator, secondNum));
-  return [question, correctAnswer];
+  const answer = String(makeExpression(firstNum, operator, secondNum));
+  return [question, answer];
 };
 
 export default () => engine(rules, gamesСonditions);

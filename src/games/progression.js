@@ -27,9 +27,9 @@ const gamesСonditions = () => {
   const progressionInterval = Math.ceil(Math.random() * 10);
   const [question, missingNumber] = makeProgression(amountOfNumbers, startNumber,
     indexOfMissingNumber, progressionInterval);
-  const correctAnswer = String(missingNumber);
+  const answer = String(missingNumber);
 
-  return [question, correctAnswer];
+  return [question, answer];
 };
 
 export default () => engine(rules, gamesСonditions);

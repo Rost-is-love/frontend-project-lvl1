@@ -11,10 +11,10 @@ export const engine = async (rules, gamesСonditions) => {
   console.log(rules);
 
   for (let round = 1; round <= numberOfRounds; round += 1) {
-    const [question, correctAnswer] = gamesСonditions();
+    const [question, answer] = gamesСonditions();
     const response = await promptly.prompt(`Question: ${question}\nYour answer:`);
-    if (response !== correctAnswer) {
-      console.log(`'${response}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
+    if (response !== answer) {
+      console.log(`'${response}' is wrong answer ;(. Correct answer was '${answer}'`);
       console.log(`Let's try again, ${playerName}!`);
       return;
     }

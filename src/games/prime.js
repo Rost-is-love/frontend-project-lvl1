@@ -18,8 +18,8 @@ const isPrime = (number) => {
 
 const gamesСonditions = () => {
   const randomnNumber = makeRandomNum(1000);
-  const correctAnswer = isPrime(randomnNumber) ? 'yes' : 'no';
-  return [randomnNumber, correctAnswer];
+  const answer = isPrime(randomnNumber) ? 'yes' : 'no';
+  return [randomnNumber, answer];
 };
 
 export default () => engine(rules, gamesСonditions);
