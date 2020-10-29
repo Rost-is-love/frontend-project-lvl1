@@ -17,9 +17,9 @@ const isPrime = (number) => {
 };
 
 const gamesСonditions = () => {
-  const randomnNumber = String(makeRandomNum(1000));
-  const answer = isPrime(randomnNumber) ? 'yes' : 'no';
-  return [randomnNumber, answer];
+  const randomNumber = String(makeRandomNum(1000));
+  const answer = isPrime(randomNumber) ? 'yes' : 'no';
+  return [randomNumber, answer];
 };
 
 export default () => engine(rules, gamesСonditions);
