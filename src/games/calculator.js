@@ -1,8 +1,8 @@
-import engine from '../index.js';
+import { makeRandomNum, engine } from '../index.js';
 
 const rules = 'What is the result of the expression?';
 
-const expression = (a, operator, b) => {
+const makeExpression = (a, operator, b) => {
   let result;
   switch (operator) {
     case '+':
@@ -21,15 +21,13 @@ const expression = (a, operator, b) => {
   return result;
 };
 
-const randomnNumber = (num) => Math.floor(Math.random() * num);
-
 const gamesСonditions = () => {
-  const firstNum = randomnNumber(100);
-  const secondNum = randomnNumber(100);
+  const firstNum = makeRandomNum(100);
+  const secondNum = makeRandomNum(100);
   const operators = ['+', '-', '*'];
-  const operator = operators[randomnNumber(operators.length)];
+  const operator = operators[makeRandomNum(operators.length)];
   const question = `${firstNum} ${operator} ${secondNum}`;
-  const correctAnswer = String(expression(firstNum, operator, secondNum));
+  const correctAnswer = String(makeExpression(firstNum, operator, secondNum));
   return [question, correctAnswer];
 };
 

@@ -1,4 +1,4 @@
-import engine from '../index.js';
+import { makeRandomNum, engine } from '../index.js';
 
 const rules = 'What number is missing in the progression?';
 
@@ -22,8 +22,8 @@ const makeProgression = (amountOfNumbers, startNumber, indexOfMissingNumber,
 const amountOfNumbers = 10;
 
 const gamesСonditions = () => {
-  const startNumber = Math.floor(Math.random() * 10);
-  const indexOfMissingNumber = Math.floor(Math.random() * 10);
+  const startNumber = makeRandomNum(10);
+  const indexOfMissingNumber = makeRandomNum(10);
   const progressionInterval = Math.ceil(Math.random() * 10);
   const [question, missingNumber] = makeProgression(amountOfNumbers, startNumber,
     indexOfMissingNumber, progressionInterval);

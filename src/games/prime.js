@@ -1,4 +1,4 @@
-import engine from '../index.js';
+import { makeRandomNum, engine } from '../index.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -17,7 +17,7 @@ const isPrime = (number) => {
 };
 
 const gamesСonditions = () => {
-  const randomnNumber = Math.floor(Math.random() * 1000);
+  const randomnNumber = makeRandomNum(1000);
   const correctAnswer = isPrime(randomnNumber) ? 'yes' : 'no';
   return [randomnNumber, correctAnswer];
 };
