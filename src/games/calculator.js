@@ -15,7 +15,7 @@ const expression = (a, operator, b) => {
       result = a * b;
       break;
     default:
-      throw new Error('Unknown state!');
+      throw new Error('Unknown operator!');
   }
 
   return result;
