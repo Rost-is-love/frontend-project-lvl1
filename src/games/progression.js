@@ -4,17 +4,21 @@ const gameChanger = 'What number is missing in the progression?';
 
 const makeProgression = (amountOfNumbers, startNumber, indexOfMissingNumber,
   progressionInterval) => {
-  let progression = '';
+  const progressionParts = [];
   let currentNum = startNumber;
   let missingNumber;
 
   for (let i = 0; i < amountOfNumbers; i += 1) {
     if (i === indexOfMissingNumber) {
-      progression = `${progression}.. `;
+      progressionParts.push('..');
       missingNumber = currentNum;
-    } else progression = `${progression}${currentNum} `;
+    } else {
+      progressionParts.push(currentNum);
+    }
     currentNum += progressionInterval;
   }
+
+  const progression = progressionParts.join(' ');
 
   return [progression, missingNumber];
 };
