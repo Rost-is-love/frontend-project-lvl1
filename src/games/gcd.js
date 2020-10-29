@@ -1,6 +1,6 @@
 import { makeRandomNum, engine } from '../index.js';
 
-const rules = 'Find the greatest common divisor of given numbers.';
+const gameChanger = 'Find the greatest common divisor of given numbers.';
 
 const findGcd = (firstNum, secondNum) => {
   let greatestCommonDivisor = 1;
@@ -28,4 +28,4 @@ const gamesСonditions = () => {
   return [question, answer];
 };
 
-export default () => engine(rules, gamesСonditions);
+export default () => engine(gameChanger, gamesСonditions);

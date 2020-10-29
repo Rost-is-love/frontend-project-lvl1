@@ -1,6 +1,6 @@
 import { makeRandomNum, engine } from '../index.js';
 
-const rules = 'What is the result of the expression?';
+const gameChanger = 'What is the result of the expression?';
 
 const makeExpression = (a, operator, b) => {
   let result;
@@ -31,4 +31,4 @@ const gamesСonditions = () => {
   return [question, answer];
 };
 
-export default () => engine(rules, gamesСonditions);
+export default () => engine(gameChanger, gamesСonditions);

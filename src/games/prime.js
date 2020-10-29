@@ -1,6 +1,6 @@
 import { makeRandomNum, engine } from '../index.js';
 
-const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gameChanger = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
   if (number < 2) {
@@ -22,4 +22,4 @@ const gamesСonditions = () => {
   return [randomNumber, answer];
 };
 
-export default () => engine(rules, gamesСonditions);
+export default () => engine(gameChanger, gamesСonditions);

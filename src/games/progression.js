@@ -1,6 +1,6 @@
 import { makeRandomNum, engine } from '../index.js';
 
-const rules = 'What number is missing in the progression?';
+const gameChanger = 'What number is missing in the progression?';
 
 const makeProgression = (amountOfNumbers, startNumber, indexOfMissingNumber,
   progressionInterval) => {
@@ -32,4 +32,4 @@ const gamesСonditions = () => {
   return [question, answer];
 };
 
-export default () => engine(rules, gamesСonditions);
+export default () => engine(gameChanger, gamesСonditions);

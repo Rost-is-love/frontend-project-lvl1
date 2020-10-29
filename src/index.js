@@ -4,11 +4,11 @@ export const makeRandomNum = (num) => Math.floor(Math.random() * num);
 
 const numberOfRounds = 3;
 
-export const engine = async (rules, gamesСonditions) => {
+export const engine = async (gameChanger, gamesСonditions) => {
   console.log('Welcome to the Brain Games!');
   const playerName = await promptly.prompt('May I have your name?');
   console.log(`Hello, ${playerName}!`);
-  console.log(rules);
+  console.log(gameChanger);
 
   for (let round = 1; round <= numberOfRounds; round += 1) {
     const [question, answer] = gamesСonditions();
