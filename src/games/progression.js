@@ -2,7 +2,9 @@ import { makeRandomNum, engine } from '../index.js';
 
 const gameChanger = 'What number is missing in the progression?';
 
-const makeProgression = (amountOfNumbers, startNumber, indexOfMissingNumber,
+const amountOfNumbers = 10;
+
+const makeProgression = (startNumber, indexOfMissingNumber,
   progressionInterval) => {
   const progressionParts = [];
   let currentNum = startNumber;
@@ -23,13 +25,11 @@ const makeProgression = (amountOfNumbers, startNumber, indexOfMissingNumber,
   return [progression, missingNumber];
 };
 
-const amountOfNumbers = 10;
-
 const gamesСonditions = () => {
   const startNumber = makeRandomNum(10);
   const indexOfMissingNumber = makeRandomNum(10);
   const progressionInterval = Math.ceil(Math.random() * 10);
-  const [question, missingNumber] = makeProgression(amountOfNumbers, startNumber,
+  const [question, missingNumber] = makeProgression(startNumber,
     indexOfMissingNumber, progressionInterval);
   const answer = String(missingNumber);
 
