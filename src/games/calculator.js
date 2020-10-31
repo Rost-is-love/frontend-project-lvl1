@@ -1,6 +1,6 @@
 import { makeRandomNum, engine } from '../index.js';
 
-const gameChanger = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const makeExpression = (operator, a, b) => {
   switch (operator) {
@@ -25,4 +25,4 @@ const generateGame = () => {
   return [question, answer];
 };
 
-export default () => engine(gameChanger, generateGame);
+export default () => engine(description, generateGame);

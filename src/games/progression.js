@@ -1,6 +1,6 @@
 import { makeRandomNum, engine } from '../index.js';
 
-const gameChanger = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const amountOfNumbers = 10;
 
@@ -36,4 +36,4 @@ const generateGame = () => {
   return [question, answer];
 };
 
-export default () => engine(gameChanger, generateGame);
+export default () => engine(description, generateGame);
