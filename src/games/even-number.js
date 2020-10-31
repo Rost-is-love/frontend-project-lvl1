@@ -1,4 +1,5 @@
-import { makeRandomNum, engine } from '../index.js';
+import engine from '../index.js';
+import makeRandomNum from '../functions.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 

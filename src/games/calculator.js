@@ -1,4 +1,5 @@
-import { makeRandomNum, engine } from '../index.js';
+import engine from '../index.js';
+import makeRandomNum from '../functions.js';
 
 const description = 'What is the result of the expression?';
 

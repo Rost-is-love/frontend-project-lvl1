@@ -1,4 +1,5 @@
-import { makeRandomNum, engine } from '../index.js';
+import engine from '../index.js';
+import makeRandomNum from '../functions.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
