@@ -2,23 +2,17 @@ import { makeRandomNum, engine } from '../index.js';
 
 const gameChanger = 'What is the result of the expression?';
 
-const makeExpression = (a, operator, b) => {
-  let result;
+const makeExpression = (operator, a, b) => {
   switch (operator) {
     case '+':
-      result = a + b;
-      break;
+      return a + b;
     case '-':
-      result = a - b;
-      break;
+      return a - b;
     case '*':
-      result = a * b;
-      break;
+      return a * b;
     default:
       throw new Error('Unknown operator!');
   }
-
-  return result;
 };
 
 const gamesСonditions = () => {
@@ -27,7 +21,7 @@ const gamesСonditions = () => {
   const operators = ['+', '-', '*'];
   const operator = operators[makeRandomNum(operators.length)];
   const question = `${firstNum} ${operator} ${secondNum}`;
-  const answer = String(makeExpression(firstNum, operator, secondNum));
+  const answer = String(makeExpression(operator, firstNum, secondNum));
   return [question, answer];
 };
 
