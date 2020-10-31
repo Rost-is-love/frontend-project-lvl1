@@ -16,10 +16,10 @@ const isPrime = (number) => {
   return true;
 };
 
-const gamesСonditions = () => {
+const generateGame = () => {
   const randomNumber = String(makeRandomNum(1000));
   const answer = isPrime(randomNumber) ? 'yes' : 'no';
   return [randomNumber, answer];
 };
 
-export default () => engine(gameChanger, gamesСonditions);
+export default () => engine(gameChanger, generateGame);
