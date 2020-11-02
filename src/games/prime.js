@@ -1,5 +1,5 @@
 import engine from '../index.js';
-import makeRandomNum from '../functions.js';
+import { makeRandomNum } from '../utils.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
