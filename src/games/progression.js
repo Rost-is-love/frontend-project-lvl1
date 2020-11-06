@@ -5,34 +5,38 @@ const description = 'What number is missing in the progression?';
 
 const amountOfNumbers = 10;
 
-const makeProgression = (startNumber, indexOfMissingNumber,
-  progressionInterval) => {
-  const progressionParts = [];
+const makeProgression = (startNumber, progressionInterval) => {
+  const progression = [];
   let currentNum = startNumber;
-  let missingNumber;
 
   for (let i = 0; i < amountOfNumbers; i += 1) {
-    if (i === indexOfMissingNumber) {
-      progressionParts.push('..');
-      missingNumber = currentNum;
-    } else {
-      progressionParts.push(currentNum);
-    }
+    progression.push(currentNum);
     currentNum += progressionInterval;
   }
 
-  const progression = progressionParts.join(' ');
+  return progression;
+};
 
-  return [progression, missingNumber];
+const makeQuestion = (progression, indexOfMissingNumber) => {
+  const questionArray = [];
+  for (let i = 0; i < progression.length; i += 1) {
+    if (i === indexOfMissingNumber) {
+      questionArray.push('..');
+    } else questionArray.push(progression[i]);
+  }
+
+  const question = questionArray.join(' ');
+
+  return question;
 };
 
 const genRoundData = () => {
   const startNumber = makeRandomNum(0, 10);
   const indexOfMissingNumber = makeRandomNum(0, 9);
   const progressionInterval = makeRandomNum(1, 10);
-  const [question, missingNumber] = makeProgression(startNumber,
-    indexOfMissingNumber, progressionInterval);
-  const answer = String(missingNumber);
+  const progression = makeProgression(startNumber, progressionInterval);
+  const question = makeQuestion(progression, indexOfMissingNumber);
+  const answer = String(progression[indexOfMissingNumber]);
 
   return [question, answer];
 };
