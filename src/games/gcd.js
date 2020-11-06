@@ -5,7 +5,7 @@ const description = 'Find the greatest common divisor of given numbers.';
 
 const findGcd = (x, y) => (x !== 0 ? findGcd(y % x, x) : y);
 
-const generateGame = () => {
+const genRoundData = () => {
   const firstNum = makeRandomNum(1, 100);
   const secondNum = makeRandomNum(1, 100);
   const question = `${firstNum} ${secondNum}`;
@@ -13,4 +13,4 @@ const generateGame = () => {
   return [question, answer];
 };
 
-export default () => playGame(description, generateGame);
+export default () => playGame(description, genRoundData);

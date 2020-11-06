@@ -16,7 +16,7 @@ const makeExpression = (operator, a, b) => {
   }
 };
 
-const generateGame = () => {
+const genRoundData = () => {
   const firstNum = makeRandomNum(1, 100);
   const secondNum = makeRandomNum(1, 100);
   const operators = ['+', '-', '*'];
@@ -27,4 +27,4 @@ const generateGame = () => {
   return [question, answer];
 };
 
-export default () => playGame(description, generateGame);
+export default () => playGame(description, genRoundData);

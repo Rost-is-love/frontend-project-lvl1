@@ -17,10 +17,10 @@ const isPrime = (number) => {
   return true;
 };
 
-const generateGame = () => {
+const genRoundData = () => {
   const randomNumber = String(makeRandomNum(1, 1000));
   const answer = isPrime(randomNumber) ? 'yes' : 'no';
   return [randomNumber, answer];
 };
 
-export default () => playGame(description, generateGame);
+export default () => playGame(description, genRoundData);
