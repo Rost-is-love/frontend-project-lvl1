@@ -18,9 +18,9 @@ const isPrime = (number) => {
 };
 
 const genRoundData = () => {
-  const randomNumber = String(makeRandomNum(1, 1000));
+  const randomNumber = makeRandomNum(1, 1000);
   const answer = isPrime(randomNumber) ? 'yes' : 'no';
-  return [randomNumber, answer];
+  return [String(randomNumber), answer];
 };
 
 export default () => playGame(description, genRoundData);
