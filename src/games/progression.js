@@ -27,9 +27,9 @@ const makeProgression = (startNumber, indexOfMissingNumber,
 };
 
 const generateGame = () => {
-  const startNumber = makeRandomNum(10);
-  const indexOfMissingNumber = makeRandomNum(10);
-  const progressionInterval = Math.ceil(Math.random() * 10);
+  const startNumber = makeRandomNum(0, 10);
+  const indexOfMissingNumber = makeRandomNum(0, 9);
+  const progressionInterval = makeRandomNum(1, 10);
   const [question, missingNumber] = makeProgression(startNumber,
     indexOfMissingNumber, progressionInterval);
   const answer = String(missingNumber);

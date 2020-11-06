@@ -17,10 +17,11 @@ const makeExpression = (operator, a, b) => {
 };
 
 const generateGame = () => {
-  const firstNum = makeRandomNum(100);
-  const secondNum = makeRandomNum(100);
+  const firstNum = makeRandomNum(1, 100);
+  const secondNum = makeRandomNum(1, 100);
   const operators = ['+', '-', '*'];
-  const operator = operators[makeRandomNum(operators.length)];
+  const lastIndex = operators.length - 1;
+  const operator = operators[makeRandomNum(0, lastIndex)];
   const question = `${firstNum} ${operator} ${secondNum}`;
   const answer = String(makeExpression(operator, firstNum, secondNum));
   return [question, answer];
