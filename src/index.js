@@ -2,7 +2,7 @@ import promptly from 'promptly';
 
 const numberOfRounds = 3;
 
-const engine = async (description, gamesСonditions) => {
+const playGame = async (description, gamesСonditions) => {
   console.log('Welcome to the Brain Games!');
   const playerName = await promptly.prompt('May I have your name?');
   console.log(`Hello, ${playerName}!`);
@@ -21,4 +21,4 @@ const engine = async (description, gamesСonditions) => {
   console.log(`Congratulations, ${playerName}`);
 };
 
-export default engine;
+export default playGame;

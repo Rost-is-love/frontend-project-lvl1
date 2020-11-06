@@ -1,4 +1,4 @@
-import engine from '../index.js';
+import playGame from '../index.js';
 import { makeRandomNum } from '../utils.js';
 
 const description = 'What number is missing in the progression?';
@@ -37,4 +37,4 @@ const generateGame = () => {
   return [question, answer];
 };
 
-export default () => engine(description, generateGame);
+export default () => playGame(description, generateGame);
