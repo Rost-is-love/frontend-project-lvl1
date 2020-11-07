@@ -32,7 +32,7 @@ const makeQuestion = (progression, indexOfMissingNumber) => {
 
 const genRoundData = () => {
   const startNumber = makeRandomNum(0, 10);
-  const indexOfMissingNumber = makeRandomNum(0, 9);
+  const indexOfMissingNumber = makeRandomNum(0, amountOfNumbers - 1);
   const progressionInterval = makeRandomNum(1, 10);
   const progression = makeProgression(startNumber, progressionInterval);
   const question = makeQuestion(progression, indexOfMissingNumber);
