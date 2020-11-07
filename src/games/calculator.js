@@ -20,8 +20,7 @@ const genRoundData = () => {
   const firstNum = makeRandomNum(1, 100);
   const secondNum = makeRandomNum(1, 100);
   const operators = ['+', '-', '*'];
-  const lastIndex = operators.length - 1;
-  const operator = operators[makeRandomNum(0, lastIndex)];
+  const operator = operators[makeRandomNum(0, operators.length - 1)];
   const question = `${firstNum} ${operator} ${secondNum}`;
   const answer = String(makeExpression(operator, firstNum, secondNum));
   return [question, answer];
