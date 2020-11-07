@@ -18,16 +18,16 @@ const makeProgression = (startNumber, progressionInterval) => {
 };
 
 const makeQuestion = (progression, indexOfMissingNumber) => {
-  const questionArray = [];
+  const numbers = [];
   for (let i = 0; i < progression.length; i += 1) {
     if (i === indexOfMissingNumber) {
-      questionArray.push('..');
+      numbers.push('..');
     } else {
-      questionArray.push(progression[i]);
+      numbers.push(progression[i]);
     }
   }
 
-  const question = questionArray.join(' ');
+  const question = numbers.join(' ');
 
   return question;
 };
