@@ -18,18 +18,9 @@ const makeProgression = (startNumber, progressionInterval) => {
 };
 
 const makeQuestion = (progression, indexOfMissingNumber) => {
-  const numbers = [];
-  for (let i = 0; i < progression.length; i += 1) {
-    if (i === indexOfMissingNumber) {
-      numbers.push('..');
-    } else {
-      numbers.push(progression[i]);
-    }
-  }
-
-  const question = numbers.join(' ');
-
-  return question;
+  const progressionCopy = progression.slice();
+  progressionCopy[indexOfMissingNumber] = '..';
+  return progressionCopy.join(' ');
 };
 
 const genRoundData = () => {
@@ -37,8 +28,8 @@ const genRoundData = () => {
   const indexOfMissingNumber = makeRandomNum(0, amountOfNumbers - 1);
   const progressionInterval = makeRandomNum(1, 10);
   const progression = makeProgression(startNumber, progressionInterval);
-  const question = makeQuestion(progression, indexOfMissingNumber);
   const answer = String(progression[indexOfMissingNumber]);
+  const question = makeQuestion(progression, indexOfMissingNumber);
 
   return [question, answer];
 };
